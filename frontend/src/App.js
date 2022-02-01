@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          HELLO!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import React, {useState} from "react";
+
+import './global.css';
+import Routes from "./routes";
+
+/***********************************************************************************
+ *  - Quando o HTML esta dentro do javascript ele é chamado de JSX ( JavaScript XML )
+ ***********************************************************************************/
+function App() { 
+  return (          
+      <Routes />
+    
   );
 }
 
